@@ -84,17 +84,17 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
+"ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
+"ข้อ 2: Cats love to eat `f _ s h`. 🐟",
     value=st.session_state.ans2_val,
 )
-    "ข้อ 3: Can I borrow your `_ e _ c _l`?.✏️ ",
+"ข้อ 3: Can I borrow your `_ e _ c _l`?.✏️ ",
     value=st.session_state.ans3_val,
 )
-    "ข้อ 4:Put your `_ a _ d` in your pockets. 👋🏻",
+"ข้อ 4:Put your `_ a _ d` in your pockets. 👋🏻",
     value=st.session_state.ans4_val,
 )
 
