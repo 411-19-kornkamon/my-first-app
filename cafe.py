@@ -1,5 +1,6 @@
 import streamlit as st
 st.title("cafe PAUdd")
+st.write(" ")
 price = st.number_input("กรอกราคาสินค้า (บาท):", value=0.0)
 vat = price * 0.07
 net_price = price - vat
