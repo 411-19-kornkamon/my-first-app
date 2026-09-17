@@ -98,7 +98,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(50 - (time.time() - st.session_state.start))
+    time_left = int(70 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
@@ -122,7 +122,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Did you see the cool volcano experiment in sc_ nc today? 🔬",
+    "ข้อ 4: Did you see the cool volcano experiment in sc_ _nc today? 🔬",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
