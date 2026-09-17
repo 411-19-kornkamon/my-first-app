@@ -82,7 +82,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4 , ans5 , ans6 , ans7):
         score += 1
     else:
         st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")
-       if u_ans6 == "thai":
+       if u_ans6 == "Thai":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
@@ -120,31 +120,31 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
+    "ข้อ 1: Can you help me solve this algebra equation in m_th_m_t_cs? 📐",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
+    "ข้อ 2: Who was the ancient king we learned about in h_st_ry class? 🏛️",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: Can I borrow your `p _ _ c_l`. ✏️",
+    "ข้อ 3: Which bright colors should I paint on my canvas in _rt class? 🎨",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: keep your `p _ _n _` in your pocket! 📱",
+    "ข้อ 4: Did you see the cool volcano experiment in sc_ nc today? 🔬",
     value=st.session_state.ans4_val,
 )
 ans4 = st.text_input(
-    "ข้อ 5: keep your `p _ _n _` in your pocket! 📱",
+    "ข้อ 5: Can we look at human cells through the microscope in b_ _l_gy? 🧬",
     value=st.session_state.ans5_val,
 )
 ans4 = st.text_input(
-    "ข้อ 6: keep your `p _ _n _` in your pocket! 📱",
+    "ข้อ 6: How do you spell this difficult word in Th_ _ class? 🇹🇭",
     value=st.session_state.ans6_val,
 )
 ans4 = st.text_input(
-    "ข้อ 7: keep your `p _ _n _` in your pocket! 📱",
+    "ข้อ 7: Which book are we reading for our _ngl_sh literature assignment? 📚",
     value=st.session_state.ans7_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
