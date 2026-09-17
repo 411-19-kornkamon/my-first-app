@@ -37,7 +37,7 @@ def reset_game():
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2, ans3, ans4):
+def show_result_dialog(ans1, ans2, ans3, ans4 , ans5 , ans6 , ans7):
     st.balloons()
     score = 0
 
@@ -135,11 +135,26 @@ ans4 = st.text_input(
     "ข้อ 4: keep your `p _ _n _` in your pocket! 📱",
     value=st.session_state.ans4_val,
 )
+ans4 = st.text_input(
+    "ข้อ 5: keep your `p _ _n _` in your pocket! 📱",
+    value=st.session_state.ans5_val,
+)
+ans4 = st.text_input(
+    "ข้อ 6: keep your `p _ _n _` in your pocket! 📱",
+    value=st.session_state.ans6_val,
+)
+ans4 = st.text_input(
+    "ข้อ 7: keep your `p _ _n _` in your pocket! 📱",
+    value=st.session_state.ans7_val,
+)
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 st.session_state.ans3_val = ans3
 st.session_state.ans4_val = ans4
+st.session_state.ans4_val = ans5
+st.session_state.ans4_val = ans6
+st.session_state.ans4_val = ans7
 
 # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มข้อ 3, 4 ตรงนี้
 
@@ -157,5 +172,3 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4)
 
-st.divider()
-st.write("นางสาวกรกมล ใจคำ เลขที่ 19 ม.4/11")
