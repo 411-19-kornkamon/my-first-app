@@ -85,7 +85,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7):
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
-    if score == 7:
+    if score == 5:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
@@ -122,7 +122,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Did you see the cool volcano experiment in sc_ _nc today? 🔬",
+    "ข้อ 4: Did you see the cool volcano experiment in sc_ _nce today? 🔬",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
